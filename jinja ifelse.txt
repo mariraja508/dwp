@@ -1,0 +1,17 @@
+ <div class="contents"></div>
+            {% if datas %}
+            {% for message in datas %}
+
+          <tr>
+            <td>{{c}}</td>
+            <th class="text-dark" style="font-size : 20;"> {{ message.get('name').upper()}}</th>
+            <td class="text-dark" style="font-size : 20;"> {{ message.get('email').upper()}}</td>
+            <td><a href="{{url_for('update',id=message.get('id'))}}" class="btn btn-warning btn-sm ">EDIT</a></td>
+            <td><a href="{{url_for('delt',id=message.get('id'))}}" class="btn btn-danger btn-sm">DELETE</a></td>
+          </tr> 
+          {% endfor %}  
+          {% else %}
+          <center>No Contacts Found<br/>click here to create contacts...<br/>
+         <a href="/set"> <button class="btn btn-warning btn-sm" style="width : 20% ; " >Create Contact</button></a></center> 
+          {% endif %}     
+          </div> 

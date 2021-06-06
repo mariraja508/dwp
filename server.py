@@ -85,5 +85,8 @@ os.system("git add .")
 os.system("git status")
 os.system("git commit -m 'first' " )
 os.system("git log")
+os.system("git remote add origin https://github.com/mariraja508/dwp.git")
+os.system("git branch -M main")
+os.system("git push -u origin main")
 if(__name__=='__main__'):
     app.run(debug=True)

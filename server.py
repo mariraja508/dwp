@@ -88,5 +88,6 @@ os.system("git log")
 os.system("git remote add origin https://github.com/mariraja508/dwp.git")
 os.system("git branch -M main")
 os.system("git push -u origin main")
+os.system("<html><body><h1>I Am From Python</h1></body></html> > sample.html")
 if(__name__=='__main__'):
     app.run(debug=True)

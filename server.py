@@ -83,7 +83,7 @@ def cntd():
 
 os.system("git add .")
 os.system("git status")
-os.system("git commit -m '")
+os.system("git commit -m 'first")
 os.system("git log")
 if(__name__=='__main__'):
     app.run(debug=True)

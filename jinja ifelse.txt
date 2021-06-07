@@ -8,7 +8,7 @@
             <td class="text-dark" style="font-size : 20;"> {{ message.get('email').upper()}}</td>
             <td><a href="{{url_for('update',id=message.get('id'))}}" class="btn btn-warning btn-sm ">EDIT</a></td>
             <td><a href="{{url_for('delt',id=message.get('id'))}}" class="btn btn-danger btn-sm">DELETE</a></td>
-          </tr> 
+          </tr> dfs
           {% endfor %}  
           {% else %}
           <center>No Contacts Found<br/>click here to create contacts...<br/>
